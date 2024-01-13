@@ -1,17 +1,14 @@
 import operator as op
 
-class Solution(object):
-    def removeElement(self, nums, val):
-        count = op.countOf(nums, val)
-        new_List = [] 
-        for i in range(len(nums)):
-            if nums[i] != val:
-                new_List.append(nums[i])
+
+def removeElement(self, nums, val):
+    k = 0
+    for i in range(len(nums)):
+        if nums[i] != val:
+            nums[k] = nums[i]
+             k += 1
         
-        nums[:] = new_List
-       
-        return nums
-        
+        return k
 
 sol = Solution()
 

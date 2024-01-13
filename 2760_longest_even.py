@@ -1,0 +1,1 @@
+def longestAlternatingSubarray(nums, threshold) -> int:

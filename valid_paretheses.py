@@ -8,7 +8,6 @@ def isValid( s):
         } 
     for i in range(len(s)):
         value = parenthesis.get(s[i])
-     
         if value in s :
             return True
         else:
